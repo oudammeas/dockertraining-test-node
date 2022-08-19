@@ -1,0 +1,8 @@
+sudo: required
+services:
+    - docker
+
+script:
+    - docker build -t dockertraining/node .
+    - docker images dockertraining/node
+
